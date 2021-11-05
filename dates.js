@@ -39,7 +39,7 @@ function getDayBeforeLastMonth(date) {
     return date;
   }
   if( checkIfLastDay( date ) ) {
-    date.setUTCFullYear(date.getUTCFullYear(), date.getUTCMonth(), 0);
+    date.setUTCDate(0);
     return date;
   }
   getDayBefore(date).setUTCMonth(date.getUTCMonth() - 1);
